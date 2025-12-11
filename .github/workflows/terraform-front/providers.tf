@@ -1,5 +1,6 @@
 terraform {
   required_version = ">= 1.5.0"
+
   required_providers {
     aws = {
       source  = "hashicorp/aws"
@@ -10,5 +11,5 @@ terraform {
 
 provider "aws" {
   region  = var.region
-  profile = var.aws_profile_frontend # o usar access_key/secret en env vars
+  profile = var.aws_profile_front
 }
